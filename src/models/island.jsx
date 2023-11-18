@@ -3,57 +3,44 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame,useThree } from "@react-three/fiber";
 
 import lslandScene from '../assets/3d/island.glb'
+import { a } from "@react-spring/three";
 
 const Island =(props)=> {
-  const { nodes, materials } = useGLTF("/island.glb");
+  const islandRef =useRef();
+  const { nodes, materials } = useGLTF(lslandScene);
   return (
-    <group {...props} dispose={null}>
+    <a.group ref={islandRef} {...props} >
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.polySurface944_tree_body_0.geometry}
         material={materials.PaletteMaterial001}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.polySurface945_tree1_0.geometry}
         material={materials.PaletteMaterial001}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.polySurface946_tree2_0.geometry}
         material={materials.PaletteMaterial001}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.polySurface947_tree1_0.geometry}
         material={materials.PaletteMaterial001}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.polySurface948_tree_body_0.geometry}
         material={materials.PaletteMaterial001}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.polySurface949_tree_body_0.geometry}
         material={materials.PaletteMaterial001}
       />
       <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.pCube11_rocks1_0.geometry}
         material={materials.PaletteMaterial001}
       />
-    </group>
+    </a.group>
   );
 }
 
-useGLTF.preload("/island.glb");
 
 export default Island;
