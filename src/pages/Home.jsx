@@ -6,11 +6,16 @@ import Loader  from "../components/Loader";
 import Sky from "../models/sky";
 import Bird from "../models/bird";
 import Plane from "../models/plane";
+import CircularCameraMotion from "../models/CircularCameraMotion";
 //  {/* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
 //                 check
 //             </div> */}
 const Home= () => {
     const [isrotating , setisrotating ]= useState(false);
+
+
+    const [currentstage ,setCurrentStage]=useState(1)
+
 
     const adjustIslandforScreenSize=()=>{
 
@@ -35,11 +40,11 @@ const Home= () => {
 
         if(window.innerWidth < 768 ){
             screenscale = [1.5 ,1.5 , 1.5];
-            screenposition=[0,-1.5,0]
+            screenposition=[0,-1.5,14]
         }
         else{
             screenscale= [3,3,3];
-            screenposition=[0,0,-4];
+            screenposition=[0,0, 14];
         }
 
         return[screenscale,screenposition]
@@ -55,23 +60,26 @@ const Home= () => {
                 <Suspense fallback={<Loader/>}>
                     <directionalLight position={[10,10,1]} intensity={2}/>
                     <ambientLight intensity={0.5}/>
-                    <hemisphereLight skyColor="#b1e1ff" groundColor="#000 " intensity={1}/>
+                    <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={1}/>
+                    
                     
                     
                     <Bird/>
-                    <Sky/> 
+                    <Sky
+                    isrotating={isrotating}
+                    /> 
                     <Island
                     isrotating={isrotating}
                     setisrotating={setisrotating}
                     position={islandPosition}
                     scale={islandScale}
                     rotation={islandrotation}
-                    
+                    setCurrentStage={setCurrentStage}
                     />
                     <Plane
                     isrotating={isrotating}
-                    scale={planeScale}
-                    position={planePosition}
+                    planeScale={planeScale}
+                    planePosition={planePosition}
                     rotation={[0,20,0]}
 
                     />
