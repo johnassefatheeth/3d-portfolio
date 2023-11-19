@@ -7,9 +7,8 @@ import Sky from "../models/sky";
 import Bird from "../models/bird";
 import Plane from "../models/plane";
 import CircularCameraMotion from "../models/CircularCameraMotion";
-//  {/* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-//                 check
-//             </div> */}
+import HomeComponent from "../components/HomeComponent";
+
 const Home= () => {
     const [isrotating , setisrotating ]= useState(false);
 
@@ -55,7 +54,9 @@ const Home= () => {
     const [planeScale,planePosition]=adjustplaneforScreenSize();
    return(
         <section className="w-full h-screen relative">
-           
+              <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+                 {currentstage && <HomeComponent currentstage={currentstage} />}
+             </div> 
             <Canvas className={`w-full h-screen bg-transparent ${isrotating? 'cursor-grabbing' :'cursor-grab'}`} camera={{near:0.1 , far: 1000}}>
                 <Suspense fallback={<Loader/>}>
                     <directionalLight position={[10,10,1]} intensity={2}/>
