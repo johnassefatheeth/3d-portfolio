@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects=()=>{
     return(
-0
+<h1>project</h1>
     )
 }
 
