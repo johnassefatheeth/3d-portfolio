@@ -4,11 +4,16 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 import scene from '../assets/3d/fox.glb'
 
 
-const Fox = (currentAnimation, ...props)=> {
+const Fox = ({currentAnimation, ...props})=> {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(scene);
   const { actions } = useAnimations(animations, group);
   useEffect(()=>{
+    Object.values(actions).forEach((action)=>action.stop())
+
+    if(actions[currentAnimation]){
+        actions[currentAnimation].play();
+    }
 
   },[actions,currentAnimation])
   return (

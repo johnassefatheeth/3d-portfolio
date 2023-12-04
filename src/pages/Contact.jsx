@@ -2,14 +2,16 @@ import React, { Suspense, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import { Canvas } from "@react-three/fiber";
 import Fox from "../models/Fox";
-// import { Loader } from "../components/Loader";
+//import { Loader } from "../components/Loader.jsx";
 const Contact=()=>{
 
     const[form,setform]=useState({name:'',email:'',message:''})
 
     const[isloading,setisloading]=useState(false)
 
-    const formref=useRef(null)
+    const [currentAnimation,setCurrentAnimation] =useState('idle')
+
+    const formref=useRef()
 
     const Handlechange=(e)=>{
         setform({...form,[e.target.name]: e.target.value})
@@ -17,14 +19,17 @@ const Contact=()=>{
     }
     
     const Handlefocus=()=>{
+        setCurrentAnimation('walk')
 
     }
     const Handleblur=()=>{
-
+        setCurrentAnimation('idle')
     }
     const Handlesubmit=(e)=>{
         e.preventDefault();
         setisloading(true);
+
+        setCurrentAnimation('hit')
 
         emailjs.send( 
             import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -42,6 +47,7 @@ const Contact=()=>{
             setform({name:'',email:'',message:''})
         }).catch((error)=>{
             setisloading(false);
+            setCurrentAnimation('idle')
             console.log(error);
         })
     }
@@ -94,10 +100,14 @@ const Contact=()=>{
                 >
                     <Suspense fallback={null}>
                         <directionalLight intensity={3} position={[0,0,1]}/>
+                        <ambientLight intensity={1}/>
+                        <pointLight position={[5,10,0]} intensity={2}/>
+                        <spotLight position={[10,10,10]} angle={0.15} penumbra={1} intensity={2}/>
                         <Fox
+                        currentAnimation={currentAnimation}
                         position={[0.5,0.35,0]}
-                        rotation={[12,10,0]}
-                        scale={[0.5,0.5,0.5]}
+                        rotation={[12.6,-0.6,0]}
+                        scale={[0.6,0.6,0.6]}
                         />
 
 
