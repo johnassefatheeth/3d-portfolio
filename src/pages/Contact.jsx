@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser'
 const Contact=()=>{
 
     const{form,setform}=useState({name:'',email:'',message:''})
 
     const{isloading,setisloading}=useState(false)
 
-    const formref=useState(null)
+    const formref=useRef(null)
 
     const Handlechange=(e)=>{
         setform({...form,[e.target.name]: e.target.value})
