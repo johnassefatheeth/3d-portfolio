@@ -1,5 +1,8 @@
-import React, { useRef, useState } from "react";
+import React, { Suspense, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
+import { Canvas } from "@react-three/fiber";
+import Fox from "../models/Fox";
+// import { Loader } from "../components/Loader";
 const Contact=()=>{
 
     const[form,setform]=useState({name:'',email:'',message:''})
@@ -47,7 +50,7 @@ const Contact=()=>{
         <section className="rellative flex lg:flex-row flex-col max-container">
             <div className="flex-1 min-w-[50%] flex flex-col">
                 <h1 className="head-text">say Hi</h1>
-            </div>
+            
 
             <form onSubmit={Handlesubmit} className="w-full flex flex-col gap-7 mt-14">
 
@@ -78,6 +81,32 @@ const Contact=()=>{
                  </button>
 
             </form>
+            </div>
+            <div className="lg:w-1/2 w-full lg:h-[550px] h-[350px]">
+
+                <Canvas
+                camera={{
+                    position:[0,0,5],
+                    fov:75,
+                    near:0.1,
+                    far:1000
+                }}
+                >
+                    <Suspense fallback={null}>
+                        <directionalLight intensity={3} position={[0,0,1]}/>
+                        <Fox
+                        position={[0.5,0.35,0]}
+                        rotation={[12,10,0]}
+                        scale={[0.5,0.5,0.5]}
+                        />
+
+
+                    </Suspense>
+
+                </Canvas>
+
+            </div>
+
         </section>
 
     )
