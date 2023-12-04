@@ -44,7 +44,12 @@ const Contact=()=>{
             import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
         ).then(()=>{
             setisloading(false);
-            setform({name:'',email:'',message:''})
+            
+
+            setTimeout(() => {
+                setform({name:'',email:'',message:''})
+                setCurrentAnimation('idle')
+            }, [3000]);
         }).catch((error)=>{
             setisloading(false);
             setCurrentAnimation('idle')
