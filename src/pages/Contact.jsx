@@ -36,22 +36,22 @@ const Contact=()=>{
                 <label htmlFor="" className="text-black-500 font-semibold">
                     Name
                 </label>
-                {/* <input type="text" name="name" className="input" placeholder="John" required value={form.name} onChange={Handlechange} onFocus={Handlefocus} onBlur={Handleblur}
+                <input type="text" name="name" className="input" placeholder="John" required  onChange={Handlechange} onFocus={Handlefocus} onBlur={Handleblur}
                 
-                /> */}
+                />
                 <label htmlFor="" className="text-black-500 font-semibold">
                     Your Email
                 </label>
-                {/* <input type="email" name="email" className="input" placeholder="John@gmail.com" required value={form.email} onChange={Handlechange} onFocus={Handlefocus} onBlur={Handleblur}
+                <input type="email" name="email" className="input" placeholder="John@gmail.com" required  onChange={Handlechange} onFocus={Handlefocus} onBlur={Handleblur}
                 
-                /> */}
+                />
                 <label htmlFor="" className="text-black-500 font-semibold">
                     Message
                 </label>
 
-                {/* <textarea  name="message" className="input" rows={4} placeholder="hi there how are you" required value={form.message} onChange={Handlechange} onFocus={Handlefocus} onBlur={Handleblur} */}
+                <textarea  name="message" className="input" rows={4} placeholder="hi there how are you" required  onChange={Handlechange} onFocus={Handlefocus} onBlur={Handleblur} 
                 
-                {/* /> */}
+                /> 
                  <button
                  type="submit" className="btn" disabled={isloading} onChange={Handlechange} onFocus={Handlefocus} onBlur={Handleblur}>
 
