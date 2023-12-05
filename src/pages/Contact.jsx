@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import Fox from "../models/Fox";
 //import { Loader } from "../components/Loader.jsx";
 import useAlert from "../hooks/useAlert";
+import Alert from "../components/Alert"
 const Contact=()=>{
 
     const[form,setform]=useState({name:'',email:'',message:''})
@@ -66,6 +67,8 @@ const Contact=()=>{
         <section className="rellative flex lg:flex-row flex-col max-container">
             
             {alert.show && <Alert {...alert}/>}
+            <Alert/>
+            
             <div className="flex-1 min-w-[50%] flex flex-col">
                 <h1 className="head-text">say Hi</h1>
             
