@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { Canvas } from "@react-three/fiber";
 import Fox from "../models/Fox";
 //import { Loader } from "../components/Loader.jsx";
+import useAlert from "../hooks/useAlert";
 const Contact=()=>{
 
     const[form,setform]=useState({name:'',email:'',message:''})
@@ -10,6 +11,8 @@ const Contact=()=>{
     const[isloading,setisloading]=useState(false)
 
     const [currentAnimation,setCurrentAnimation] =useState('idle')
+
+    const {alert,showAlert,hideAlert} =useAlert();
 
     const formref=useRef()
 
@@ -44,9 +47,11 @@ const Contact=()=>{
             import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
         ).then(()=>{
             setisloading(false);
+            showAlert({show:true, text:'message deliverd',type:'success'})
             
 
             setTimeout(() => {
+                hideAlert({show:true, text:'message failed to be deliverd',type:'danger'})
                 setform({name:'',email:'',message:''})
                 setCurrentAnimation('idle')
             }, [3000]);
@@ -59,6 +64,8 @@ const Contact=()=>{
 
     return(
         <section className="rellative flex lg:flex-row flex-col max-container">
+            
+            {alert.show && <Alert {...alert}/>}
             <div className="flex-1 min-w-[50%] flex flex-col">
                 <h1 className="head-text">say Hi</h1>
             
