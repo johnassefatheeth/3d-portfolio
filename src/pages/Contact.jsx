@@ -67,7 +67,7 @@ const Contact=()=>{
         <section className="rellative flex lg:flex-row flex-col max-container">
             
             {alert.show && <Alert {...alert}/>}
-            <Alert/>
+            <Alert text="alert"/>
             
             <div className="flex-1 min-w-[50%] flex flex-col">
                 <h1 className="head-text">say Hi</h1>
