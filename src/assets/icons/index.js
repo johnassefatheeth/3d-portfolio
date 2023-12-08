@@ -26,6 +26,17 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import bootstrap from './bootstrap.svg'
+import photoshop from './photoshop.svg'
+import canva from './canva.svg'
+import figma from './figma.svg'
+import java from './java.svg'
+import python from './python.svg'
+import vue from './vue.svg'
+import sql from './sql.svg'
+
+
+
 
 export {
     css,

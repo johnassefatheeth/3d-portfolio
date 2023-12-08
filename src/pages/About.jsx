@@ -1,4 +1,5 @@
 import React from "react";
+import { skills } from "../constants";
 
 const About=()=>{
     return(
@@ -27,7 +28,13 @@ const About=()=>{
             <div className="py-10 flex flex-col">
                 <h3 className="subheaded-text">My Skills</h3>
                 <div className="mt-16 flex flex-warp gap-12">
-                    
+                    {skills.map((skill )=>(
+                        <div>
+                            <div>
+                                <img src={skill.imageUrl} alt={skill.name} className="w-1/2 h-1/2 object-contain" />
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
