@@ -39,6 +39,14 @@ import sql from './sql.svg'
 
 
 export {
+    bootstrap,
+    photoshop,
+    canva,
+    figma,
+    java,
+    python,
+    vue,
+    sql,
     css,
     express,
     git,
