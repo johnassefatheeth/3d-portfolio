@@ -15,8 +15,6 @@ import {
     javascript,
     linkedin,
     mongodb,
-    motion,
-    mui,
     nextjs,
     nodejs,
     photoshop,
@@ -30,8 +28,7 @@ import {
     snapgram,
     summiz,
     tailwindcss,
-    threads,
-    typescript
+    threads
 } from "../assets/icons";
 
 export const skills = [
