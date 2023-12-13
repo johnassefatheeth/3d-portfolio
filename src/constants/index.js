@@ -187,7 +187,7 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/johnassefatheeth',
     },
     {
         name: 'LinkedIn',
@@ -201,22 +201,22 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
+        name: 'Todo Web app',
+        description: 'Comletely made with vuejs this to-do app uses local storage to save your lists and though using one site provides differnt list for difeernt useres',
         link: 'https://github.com/adrianhajdin/pricewise',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
+        name: 'EPL Match predictor',
+        description: 'being fully made out of python thiis site usees the EPL match data from 2017-2019 to predict the result of premier league matchs',
         link: 'https://github.com/adrianhajdin/threads',
     },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
+        name: 'Blood bank database',
+        description: 'This is a bloodbank database made to shoe how blood banks blood managment system should work in the database.it is made from SQL',
         link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
     },
     {
