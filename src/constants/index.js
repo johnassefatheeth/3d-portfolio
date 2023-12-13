@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla,htmlcert,csscert,aastu,rwd,cm,hu,java,pyth,jp,fwd } from "../assets/images";
+import { meta, shopify, starbucks, tesla,htmlcert,csscert,aastu,rwd,cm,hu,javacert,pyth,jp,fwd } from "../assets/images";
 import {
     bootstrap,
     car,
@@ -109,58 +109,60 @@ export const skills = [
     },
 ];
 
-export const experiences = [
+export const certificates = [
     {
-        title: "Event Organizer",
+        title: "Completion of HTML coarse",
+        company_name: "sololearn",
+        icon: htmlcert,
+        
+    },
+    {
+        title: "Completion of CSS coarse",
+        company_name: "sololearn",
+        icon: csscert,
+        
+    },
+    {
+        title: "Completion of Javascript coarse",
+        company_name: "sololearn",
+        icon: js,
+        
+    },
+    {
+        title: "Completion of java coarse",
+        company_name: "sololearn",
+        icon: htmlcert,
+        
+    },
+    {
+        title: "Completion of python coarse",
+        company_name: "sololearn",
+        icon: htmlcert,
+        
+    },
+    {
+        title: "Completion of coding for markerts coarse",
+        company_name: "sololearn",
+        icon: htmlcert,
+        
+    },
+    {
+        title: "Completion of resposnsive web design coarse",
+        company_name: "sololearn",
+        icon: htmlcert,
+        
+    },
+    {
+        title: "Completion of STEM coarse in AASTU",
+        company_name: "Adiss Ababa Science and Technology Universty",
+        icon: htmlcert,
+        
+    },
+    {
+        title: "Completion of recodnition",
         company_name: "Hult prize",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
+        icon: htmlcert,
+        
     },
 ];
 
