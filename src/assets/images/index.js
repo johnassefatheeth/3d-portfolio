@@ -11,10 +11,10 @@ import fwd from './fwd.jpg'
 import htmlcert from './html.jpg'
 import hu from './hu.png'
 import javacert from './java.jpg'
-import jp from './jp.jpg'
+import jq from './jq.jpg'
 import pyth from './pyth.jpg'
 import rwd from './rwd.jpg'
-import js from './js.pmg'
+import js from './js.png'
 
 
 export {
@@ -31,7 +31,8 @@ export {
     htmlcert,
     hu,
     javacert,
-    jp,
+    jq,
     pyth,
-    rwd
+    rwd,
+    js
 }

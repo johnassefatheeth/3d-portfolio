@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla,htmlcert,csscert,aastu,rwd,cm,hu,javacert,pyth,jp,fwd } from "../assets/images";
+import { meta, shopify, starbucks, tesla,htmlcert,csscert,aastu,rwd,cm,hu,javacert,pyth,jq,fwd ,js} from "../assets/images";
 import {
     bootstrap,
     car,
@@ -131,37 +131,49 @@ export const certificates = [
     {
         title: "Completion of java coarse",
         company_name: "sololearn",
-        icon: htmlcert,
+        icon: javacert,
         
     },
     {
         title: "Completion of python coarse",
         company_name: "sololearn",
-        icon: htmlcert,
+        icon: pyth,
         
     },
     {
         title: "Completion of coding for markerts coarse",
         company_name: "sololearn",
-        icon: htmlcert,
+        icon: cm,
         
     },
     {
         title: "Completion of resposnsive web design coarse",
         company_name: "sololearn",
-        icon: htmlcert,
+        icon: rwd,
         
     },
     {
         title: "Completion of STEM coarse in AASTU",
         company_name: "Adiss Ababa Science and Technology Universty",
-        icon: htmlcert,
+        icon: aastu,
         
     },
     {
         title: "Completion of recodnition",
         company_name: "Hult prize",
-        icon: htmlcert,
+        icon: hu,
+        
+    },
+    {
+        title: "Completion of jquery coarse",
+        company_name: "sololearn",
+        icon: jq,
+        
+    },
+    {
+        title: "Completion of fundamentals of web design coarse",
+        company_name: "sololearn",
+        icon: fwd,
         
     },
 ];
@@ -182,6 +194,7 @@ export const socialLinks = [
         iconUrl: linkedin,
         link: 'https://www.linkedin.com/in/YourLinkedInUsername',
     }
+    
 ];
 
 export const projects = [
