@@ -180,9 +180,9 @@ export const certificates = [
 
 export const socialLinks = [
     {
-        name: 'Contact',
+        name: 'Telegram',
         iconUrl: contact,
-        link: '/contact',
+        link: '@AndTwld',
     },
     {
         name: 'GitHub',
