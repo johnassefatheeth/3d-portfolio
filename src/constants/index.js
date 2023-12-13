@@ -222,15 +222,15 @@ export const projects = [
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
+        name: 'simple portfolio site',
+        description: 'a site made purly with HTML CSS and Javascript and no other frameworks showcasing a persons skills',
         link: 'https://github.com/adrianhajdin/social_media_app',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
+        name: 'voice activated intent recognizing AI',
+        description: 'a project made with Pyhton uses voice comands for intent recognition and performs the needed comands',
         link: 'https://github.com/adrianhajdin/projects_realestate',
     },
     {
