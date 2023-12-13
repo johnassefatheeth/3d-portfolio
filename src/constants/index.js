@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { meta, shopify, starbucks, tesla,htmlcert,csscert,aastu,rwd,cm,hu,java,pyth,jp,fwd } from "../assets/images";
 import {
     bootstrap,
     car,
