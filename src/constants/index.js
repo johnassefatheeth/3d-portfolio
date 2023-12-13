@@ -1,3 +1,4 @@
+import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
     bootstrap,
     car,
