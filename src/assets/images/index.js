@@ -22,5 +22,15 @@ export {
     shopify,
     starbucks,
     tesla,
-    logo
+    logo,
+    aastu,
+    cm,
+    csscert,
+    fwd,
+    htmlcert,
+    hu,
+    java,
+    jp,
+    pyth,
+    rwd
 }
