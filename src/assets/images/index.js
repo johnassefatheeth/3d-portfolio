@@ -8,7 +8,13 @@ import aastu from './aastu.png'
 import cm from './cm.jpg'
 import csscert from 'css.jpg'
 import fwd from './fwd.jpg'
-import htmlcert from './html'
+import htmlcert from './html.jpg'
+import hu from './hu.png'
+import java from './java.jpg'
+import jp from './jp.jpg'
+import pyth from './pyth.jpg'
+import rwd from './rwd.jpg'
+
 
 export {
     hero,
