@@ -236,8 +236,8 @@ export const projects = [
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
+        name: 'A youtube clone',
+        description: 'A project in the making this a clone for youtube, it is being buit with react and NO YOUTUBE assistance :)',
         link: 'https://github.com/adrianhajdin/project_ai_summarizer',
     }
 ];
