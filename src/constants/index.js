@@ -224,7 +224,7 @@ export const projects = [
         theme: 'btn-back-pink',
         name: 'simple portfolio site',
         description: 'a site made purly with HTML CSS and Javascript and no other frameworks showcasing a persons skills',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        link: 'https://johnassefatheeth.github.io/johnAssefa_BITSr01/',
     },
     {
         iconUrl: estate,
