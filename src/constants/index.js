@@ -203,7 +203,7 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'Todo Web app',
         description: 'Comletely made with vuejs this to-do app uses local storage to save your lists and though using one site provides differnt list for difeernt useres',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        link: 'https://todo-list-with-vue-ruby.vercel.app/',
     },
     {
         iconUrl: threads,
