@@ -182,7 +182,7 @@ export const socialLinks = [
     {
         name: 'Telegram',
         iconUrl: contact,
-        link: '@AndTwld',
+        link: 'http://t.me/@AndTwld',
     },
     {
         name: 'GitHub',
