@@ -217,7 +217,7 @@ export const projects = [
         theme: 'btn-back-blue',
         name: 'Blood bank database',
         description: 'This is a bloodbank database made to shoe how blood banks blood managment system should work in the database.it is made from SQL',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        link: 'https://github.com/johnassefatheeth/bahie-dar-blood-bank-database',
     },
     {
         iconUrl: snapgram,
@@ -231,13 +231,13 @@ export const projects = [
         theme: 'btn-back-black',
         name: 'voice activated intent recognizing AI',
         description: 'a project made with Pyhton uses voice comands for intent recognition and performs the needed comands',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        link: 'https://github.com/mahbere-gfuan/machine-learning',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
         name: 'A youtube clone',
         description: 'A project in the making this a clone for youtube, it is being buit with react and NO YOUTUBE assistance :)',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        link: 'https://github.com/Telsome/yt-clone',
     }
 ];
