@@ -210,7 +210,7 @@ export const projects = [
         theme: 'btn-back-green',
         name: 'EPL Match predictor',
         description: 'being fully made out of python thiis site usees the EPL match data from 2017-2019 to predict the result of premier league matchs',
-        link: 'https://github.com/adrianhajdin/threads',
+        link: 'https://guess-game.streamlit.app/',
     },
     {
         iconUrl: car,
