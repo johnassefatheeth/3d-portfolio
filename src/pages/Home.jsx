@@ -4,8 +4,8 @@ import { Suspense } from "react";
 import Island from "../models/island";
 import Loader  from "../components/Loader";
 import Sky from "../models/Sky";
-import Bird from "../models/bird";
-import Plane from "../models/plane";
+import Bird from "../models/Bird";
+import Plane from "../models/Plane";
 import CircularCameraMotion from "../models/CircularCameraMotion";
 import HomeComponent from "../components/HomeComponent";
 import sakura from "../assets/sakura.mp3"
