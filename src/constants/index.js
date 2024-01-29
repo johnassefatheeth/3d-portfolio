@@ -47,6 +47,16 @@ export const skills = [
         type: "Frontend",
     },
     {
+        imageUrl: gin,
+        name: "gin",
+        type: "Backend",
+    },
+    {
+        imageUrl: go,
+        name: "golang",
+        type: "Backend",
+    },
+    {
         imageUrl: graphql,
         name: "graphql",
         type: "Api",
