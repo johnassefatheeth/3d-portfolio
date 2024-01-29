@@ -1,5 +1,6 @@
 import React from "react";
 import { skills } from "../constants";
+import { certificates } from "../constants";
 
 const About=()=>{
     return(
@@ -38,8 +39,16 @@ const About=()=>{
                 </div>
             </div>
             <div className="py-16">
-                <h3 className="subhead-text">Exprience</h3>
-
+                <h3 className="subhead-text">Certificates</h3>
+                <div className="mt-16 flex flex-wrap gap-12">
+                    {certificates.map((cert) => (
+                        <div className="block-container w-40 h-20" key={cert.name}>
+                            <div className="btn-front rounded-xl flex justify-center items-center">
+                                <img src={cert.icon} alt={cert.name} className="w-full h-full object-contain" />
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     )
