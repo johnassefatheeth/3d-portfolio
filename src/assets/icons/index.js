@@ -34,6 +34,16 @@ import java from './java.svg'
 import python from './python.svg'
 import vue from './vue.svg'
 import sql from './sql.svg'
+import vee from './vee.svg'
+import nuxt from './nuxt.svg'
+import hasura from './hasura.svg'
+import graphql from './graphql.svg'
+import go from './go.svg'
+import gin from './gin.svg'
+import docker from './docker.svg'
+import postman from './postman.svg'
+import postgres from './postgres.svg'
+
 
 
 
@@ -74,5 +84,14 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    vee,
+    nuxt,
+    postgres,
+    postman,
+    hasura,
+    graphql,
+    go,
+    gin
+
 }
