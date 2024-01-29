@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect,useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import Island from "../models/island";
@@ -8,8 +8,27 @@ import Bird from "../models/bird";
 import Plane from "../models/plane";
 import CircularCameraMotion from "../models/CircularCameraMotion";
 import HomeComponent from "../components/HomeComponent";
+import sakura from "../assets/sakura.mp3"
+import { soundon, soundoff } from "../assets/icons";
 
 const Home= () => {
+    const audioRef =useRef(new Audio(sakura))
+    audioRef.current.volume=0.05
+    audioRef.current.loop=true
+    const [isPlayingMusic, setIsPlayingMusic]=useState(true)
+
+
+    useEffect(()=>{
+        if(isPlayingMusic){
+            audioRef.current.play()
+        }
+
+
+        return()=>{
+            audioRef.current.pause()
+        }
+    })
+
     const [isrotating , setisrotating ]= useState(false);
 
 
@@ -86,6 +105,13 @@ const Home= () => {
                     />
                 </Suspense>
             </Canvas>
+
+            <div className="absolute bottom-2 left-2 ">
+                <img src={!isPlayingMusic?soundoff :soundon} alt="sonund" 
+                className="w-10 h-10 cursor-pointer object-contain"
+                 onClick={()=>setIsPlayingMusic(!isPlayingMusic)}
+                />
+            </div>
 
         </section>
    )

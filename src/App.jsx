@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-<main>
+<main className="bg-slate-300/20 h-[100vh]">
 
     <Router>
       <Navbar></Navbar>

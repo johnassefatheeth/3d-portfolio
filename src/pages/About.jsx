@@ -1,6 +1,7 @@
 import React from "react";
 import { skills } from "../constants";
 import { certificates } from "../constants";
+import { CTA } from "../components/CTA";
 
 const About=()=>{
     return(
@@ -50,6 +51,8 @@ const About=()=>{
                     ))}
                 </div>
             </div>
+            <hr className="border-slate-200" />
+            <CTA/>
         </section>
     )
 }
