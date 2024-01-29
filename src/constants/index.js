@@ -28,10 +28,51 @@ import {
     snapgram,
     summiz,
     tailwindcss,
-    threads
+    threads,
+    vee,
+    nuxt,
+    postgres,
+    postman,
+    hasura,
+    graphql,
+    go,
+    gin
+    
 } from "../assets/icons";
 
 export const skills = [
+    {
+        imageUrl: vee,
+        name: "vee validate",
+        type: "Frontend",
+    },
+    {
+        imageUrl: graphql,
+        name: "graphql",
+        type: "Api",
+    },
+    
+    {
+        imageUrl: postgres,
+        name: "postgres",
+        type: "database",
+    },
+    
+    {
+        imageUrl: hasura,
+        name: "hasura",
+        type: "database",
+    },
+    {
+        imageUrl: nuxt,
+        name: "Nuxt js",
+        type: "Frontend",
+    },
+    {
+        imageUrl: postman,
+        name: "postman endpoint testing",
+        type: "Backend",
+    },
     {
         imageUrl: css,
         name: "CSS",
