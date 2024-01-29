@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import Island from "../models/island";
 import Loader  from "../components/Loader";
-import Sky from "../models/sky";
+import Sky from "../models/Sky";
 import Bird from "../models/bird";
 import Plane from "../models/plane";
 import CircularCameraMotion from "../models/CircularCameraMotion";
