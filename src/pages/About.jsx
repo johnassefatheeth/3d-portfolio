@@ -10,7 +10,7 @@ const About=()=>{
                 HI there ,this is<span className="blue-gradient_text font-semibold drop-shadow">John</span>
             </h1>
 
-            <div className="mt-s flex flex-col gap-3 text-slate-500">
+            <div className="mt-s flex flex-col gap-3 text-slate-500 h-fit">
                 <p>
                 a software engineer with advanced front-end
                  and moderate
