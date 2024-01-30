@@ -43,6 +43,10 @@ import gin from './gin.svg'
 import docker from './docker.svg'
 import postman from './postman.svg'
 import postgres from './postgres.svg'
+import blood from './water.svg'
+import youtube from './youtube.svg'
+import ball from './ball.svg'
+import pinia from './pinia.svg'
 
 
 
@@ -50,6 +54,7 @@ import postgres from './postgres.svg'
 
 export {
     bootstrap,
+    blood,
     photoshop,
     canva,
     figma,
@@ -92,6 +97,10 @@ export {
     hasura,
     graphql,
     go,
-    gin
+    gin,
+    youtube,
+    ball,
+    pinia,
+    docker
 
 }

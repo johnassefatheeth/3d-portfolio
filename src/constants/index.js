@@ -1,12 +1,11 @@
 import { meta, shopify, starbucks, tesla,htmlcert,csscert,aastu,rwd,cm,hu,javacert,pyth,jq,fwd ,js} from "../assets/images";
 import {
     bootstrap,
+    blood,
     car,
     canva,
     contact,
     css,
-    estate,
-    express,
     figma,
     git,
     github,
@@ -14,17 +13,12 @@ import {
     java,
     javascript,
     linkedin,
-    mongodb,
-    nextjs,
-    nodejs,
     photoshop,
     pricewise,
     python,
     vue,
     react,
-    redux,
     sql,
-    sass,
     snapgram,
     summiz,
     tailwindcss,
@@ -36,7 +30,11 @@ import {
     hasura,
     graphql,
     go,
-    gin
+    gin,
+    youtube,
+    ball,
+    pinia,
+    docker
     
 } from "../assets/icons";
 
@@ -44,6 +42,16 @@ export const skills = [
     {
         imageUrl: vee,
         name: "vee validate",
+        type: "Frontend",
+    },
+    {
+        imageUrl: docker,
+        name: "docker",
+        type: "VM",
+    },
+    {
+        imageUrl: pinia,
+        name: "pinia",
         type: "Frontend",
     },
     {
@@ -257,14 +265,14 @@ export const projects = [
         link: 'https://todo-list-with-vue-ruby.vercel.app/',
     },
     {
-        iconUrl: threads,
+        iconUrl: ball,
         theme: 'btn-back-green',
         name: 'EPL Match predictor',
         description: 'being fully made out of python thiis site usees the EPL match data from 2017-2019 to predict the result of premier league matchs',
         link: 'https://guess-game.streamlit.app/',
     },
     {
-        iconUrl: car,
+        iconUrl: blood,
         theme: 'btn-back-blue',
         name: 'Blood bank database',
         description: 'This is a bloodbank database made to shoe how blood banks blood managment system should work in the database.it is made from SQL',
@@ -278,14 +286,14 @@ export const projects = [
         link: 'https://johnassefatheeth.github.io/johnAssefa_BITSr01/',
     },
     {
-        iconUrl: estate,
+        iconUrl: summiz,
         theme: 'btn-back-black',
         name: 'voice activated intent recognizing AI',
         description: 'a project made with Pyhton uses voice comands for intent recognition and performs the needed comands',
         link: 'https://github.com/mahbere-gfuan/machine-learning',
     },
     {
-        iconUrl: summiz,
+        iconUrl: youtube,
         theme: 'btn-back-yellow',
         name: 'A youtube clone',
         description: 'A project in the making this a clone for youtube, it is being buit with react and NO YOUTUBE assistance :)',
