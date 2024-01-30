@@ -1,8 +1,4 @@
 import hero from './hero.jpg'
-import meta from './meta.png'
-import shopify from './shopify.png'
-import starbucks from './starbucks.png'
-import tesla from './tesla.png'
 import logo from './logo.svg'
 import aastu from './aastu.png'
 import cm from './cm.jpg'
@@ -15,13 +11,11 @@ import jq from './jq.jpg'
 import pyth from './pyth.jpg'
 import rwd from './rwd.jpg'
 import js from './js.jpg'
+import mint from './mint.png'
+import minab from './minab.png'
 
 export {
     hero,
-    meta,
-    shopify,
-    starbucks,
-    tesla,
     logo,
     aastu,
     cm,
@@ -33,5 +27,7 @@ export {
     jq,
     pyth,
     rwd,
-    js
+    js,
+    minab,
+    mint
 }

@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla,htmlcert,csscert,aastu,rwd,cm,hu,javacert,pyth,jq,fwd ,js} from "../assets/images";
+import { htmlcert,csscert,aastu,rwd,cm,hu,javacert,pyth,jq,fwd ,js,minab,mint} from "../assets/images";
 import {
     bootstrap,
     blood,
@@ -170,6 +170,11 @@ export const skills = [
 
 export const certificates = [
     {
+        title: "Completion of web and mobile training coarse coarse",
+        company_name: "minab tech",
+        icon: minab,
+    },
+    {
         title: "Completion of HTML coarse",
         company_name: "sololearn",
         icon: htmlcert,
@@ -179,6 +184,13 @@ export const certificates = [
         title: "Completion of CSS coarse",
         company_name: "sololearn",
         icon: csscert,
+        
+    },
+    
+    {
+        title: "training by mint",
+        company_name: "minster of inovation and technology",
+        icon: mint,
         
     },
     {
