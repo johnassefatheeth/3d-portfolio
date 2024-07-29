@@ -11,7 +11,7 @@ import jq from './jq.jpg'
 import pyth from './pyth.jpg'
 import rwd from './rwd.jpg'
 import js from './js.jpg'
-import mint from './mint.png'
+import mint from './Mint.png'
 import minab from './minab.png'
 
 export {
