@@ -49,8 +49,9 @@ import ball from './ball.svg'
 import pinia from './pinia.svg'
 import threejs from './threejs.png'
 import music from './music.png'
-
-
+import movie from './movie.png'
+import game from './game.png'
+import food from './food.png'
 
 
 
@@ -105,5 +106,8 @@ export {
     ball,
     pinia,
     docker,
-    music
+    music,
+    movie,
+    game,
+    food
 }

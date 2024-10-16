@@ -36,7 +36,10 @@ import {
     pinia,
     threejs,
     docker,
-    music
+    music,
+    movie,
+    game,
+    food
     
 } from "../assets/icons";
 
@@ -277,6 +280,13 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: game,
+        theme: 'btn-back-yellow',
+        name: '3d multiplayer game',
+        description: 'a 3d multiplayer game made with three.js and playroom',
+        link: 'https://github.com/johnassefatheeth/shooter',
+    },
+    {
         iconUrl: music,
         theme: 'btn-back-red',
         name: 'music player mobile app',
@@ -289,6 +299,13 @@ export const projects = [
         name: 'EPL Match predictor',
         description: 'being fully made out of python thiis site usees the EPL match data from 2017-2019 to predict the result of premier league matchs',
         link: 'https://guess-game.streamlit.app/',
+    },
+    {
+        iconUrl: movie,
+        theme: 'btn-back-green',
+        name: 'movie site',
+        description: 'a site made with nuxt.js and tailwind css that shows the latest movies and tv shows and their details',
+        link: 'https://github.com/johnassefatheeth/movie-app-with-nuxt',
     },
     {
         iconUrl: blood,
@@ -312,10 +329,10 @@ export const projects = [
         link: 'https://github.com/mahbere-gfuan/machine-learning',
     },
     {
-        iconUrl: youtube,
+        iconUrl: food,
         theme: 'btn-back-yellow',
-        name: 'A youtube clone',
-        description: 'A project in the making this a clone for youtube, it is being buit with react and NO YOUTUBE assistance :)',
-        link: 'https://github.com/Telsome/yt-clone',
+        name: 'fullstack recipe site',
+        description: 'a fullstack recipe sharing rating and commenting site made with nuxt.js and golang',
+        link: 'https://github.com/johnassefatheeth/recipe-site',
     }
 ];
