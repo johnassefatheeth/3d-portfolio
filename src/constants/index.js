@@ -34,11 +34,18 @@ import {
     youtube,
     ball,
     pinia,
-    docker
+    threejs,
+    docker,
+    music
     
 } from "../assets/icons";
 
 export const skills = [
+    {
+    imageUrl: threejs,
+    name: "three.js",
+    type: "Frontend",
+},
     {
         imageUrl: vee,
         name: "vee validate",
@@ -270,11 +277,11 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: music,
         theme: 'btn-back-red',
-        name: 'Todo Web app',
-        description: 'Comletely made with vuejs this to-do app uses local storage to save your lists and though using one site provides differnt list for difeernt useres',
-        link: 'https://todo-list-with-vue-ruby.vercel.app/',
+        name: 'music player mobile app',
+        description: 'a very simple and light weight music player app made with flutter',
+        link: 'https://github.com/johnassefatheeth/achawtegn',
     },
     {
         iconUrl: ball,

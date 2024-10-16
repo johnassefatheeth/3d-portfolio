@@ -47,6 +47,8 @@ import blood from './water.svg'
 import youtube from './youtube.svg'
 import ball from './ball.svg'
 import pinia from './pinia.svg'
+import threejs from './threejs.png'
+import music from './music.png'
 
 
 
@@ -54,6 +56,7 @@ import pinia from './pinia.svg'
 
 export {
     bootstrap,
+    threejs,
     blood,
     photoshop,
     canva,
@@ -101,6 +104,6 @@ export {
     youtube,
     ball,
     pinia,
-    docker
-
+    docker,
+    music
 }
