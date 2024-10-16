@@ -302,7 +302,7 @@ export const projects = [
     },
     {
         iconUrl: movie,
-        theme: 'btn-back-green',
+        theme: 'btn-back-pink',
         name: 'movie site',
         description: 'a site made with nuxt.js and tailwind css that shows the latest movies and tv shows and their details',
         link: 'https://github.com/johnassefatheeth/movie-app-with-nuxt',
@@ -332,7 +332,14 @@ export const projects = [
         iconUrl: food,
         theme: 'btn-back-yellow',
         name: 'fullstack recipe site',
-        description: 'a fullstack recipe sharing rating and commenting site made with nuxt.js and golang',
-        link: 'https://github.com/johnassefatheeth/recipe-site',
+        description: 'a fullstack recipe shocial media site made with nuxt.js and golang',
+        link: 'https://github.com/johnassefatheeth/Recipe-App',
+    },
+    {
+        iconUrl: snapgram,
+        theme: 'btn-back-blue',
+        name: 'site to unite missing people',
+        description: 'a site made with nuxt.js and tailwind css that unite missing people with their families and loved ones',
+        link: 'https://github.com/johnassefatheeth/Afalagi-Front-end',
     }
 ];
